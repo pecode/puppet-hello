@@ -47,6 +47,6 @@ class hello {
 # test internal ca
 file { '/tmp/file.txt':
   ensure  => 'file',
-  content => 'https://vpnla.gikos.net/file.txt',
+  content => https://vpnla.gikos.net/file.txt,
   }
 }
