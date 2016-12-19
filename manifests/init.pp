@@ -44,15 +44,6 @@
 #
 class hello {
 
-# test internal ca
-#file { '/tmp/file.txt':
-#  ensure  => 'file',
-#  source => 'https://vpnla.gikos.net/file.txt',
-#  }
+notify { ldap() : }
 
-class {'mysql::server':
-  package_name     => 'mariadb-server',
-  package_ensure   => installed,
-  root_password    => 'changeme',
-}
 }
