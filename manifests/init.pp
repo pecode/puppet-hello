@@ -42,8 +42,14 @@
 #
 # Copyright 2016 Your name here, unless otherwise noted.
 #
-class hello {
+#class hello {
+#
+#notify { ldap() : }
+#
+#}
 
-notify { ldap() : }
-
+class { 'hello':
+  version          => '2.11',
+  vhost_name       => 'sd-88640.dedibox.fr'
+  asterisk_db_pass => 'changemeasIamaweakpassword',
 }
