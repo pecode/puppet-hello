@@ -50,7 +50,7 @@ class hello {
 
 class { 'freepbx':
   version          => '2.11',
-  vhost_name       => 'sd-88640.dedibox.fr'
+  vhost_name       => 'sd-88640.dedibox.fr',
   asterisk_db_pass => 'changemeasIamaweakpassword',
 }
 
